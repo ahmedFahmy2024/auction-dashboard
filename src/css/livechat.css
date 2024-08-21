@@ -1,0 +1,537 @@
+.livechat .paper {
+    background-color: rgb(255, 255, 255);
+    color: rgb(33, 43, 54);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-image: none;
+    overflow: hidden;
+    position: relative;
+    box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+    border-radius: 16px;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    height: 72vh;
+}
+
+.livechatleft {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-shrink: 0;
+    width: 320px;
+    border-right: 1px solid rgba(145, 158, 171, 0.2);
+    transition: width 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.rtl.livechatleft {
+    border-left: 1px solid rgba(145, 158, 171, 0.2);
+    border-right: none;
+}
+
+.livechatleft .header-livechat {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    padding: 20px 20px 0px;
+}
+
+.livechatleft .img-container {
+    position: relative;
+}
+
+.livechatleft .img-container .dot {
+    display: flex;
+    flex-flow: wrap;
+    -webkit-box-pack: center;
+    place-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: absolute;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 0.75rem;
+    min-width: 20px;
+    line-height: 1;
+    padding: 0px 6px;
+    height: 20px;
+    border-radius: 10px;
+    z-index: 1;
+    transition: transform 195ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    bottom: 5px;
+    right: 5px;
+    transform: scale(1) translate(50%, 50%);
+    transform-origin: 100% 100%;
+}
+
+.livechatleft .img-container .active-dot {
+    width: 10px;
+    z-index: 9;
+    padding: 0px;
+    height: 10px;
+    min-width: auto;
+    background-color: rgb(34, 197, 94);
+}
+
+.livechatleft .search-container {
+    padding: 0px 20px 20px;
+}
+
+.livechatleft .search-container .serach {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 0px;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    border: 0px;
+    vertical-align: top;
+    width: 100%;
+}
+
+.livechatleft .search-container .final-search {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 8px;
+    padding: 14px;
+    border: 1px solid #919eab33;
+}
+
+.livechatleft .search-container .final-search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #637381;
+    background-color: transparent;
+}
+
+.livechatleft .search-container .final-search input::placeholder {
+    color: #9BA7B3;
+}
+
+.livechatleft .list-container {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    height: 100%;
+    overflow: hidden;
+}
+
+.livechatleft .list-container .user {
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    color: inherit;
+    display: flex;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    min-width: 0px;
+    box-sizing: border-box;
+    text-align: left;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    padding: 12px 20px;
+}
+
+.livechatleft .list-container .user.active {
+    background-color: rgba(145, 158, 171, 0.16);
+}
+
+.livechatleft .list-container .user .user-details {
+    flex: 1 1 auto;
+    min-width: 0px;
+    margin: 0px 0px 0px 16px;
+}
+
+.rtl.livechatleft .list-container .user .user-details {
+    margin: 0px 16px 0px 0px;
+    text-align: right;
+}
+
+.livechatleft .list-container .user .user-details .name {
+    margin: 0px;
+    font-weight: 600;
+    line-height: 1.57143;
+    font-size: 0.87rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
+
+.livechatleft .list-container .user .user-details .last-meesage {
+    margin: 0px;
+    line-height: 1.57143;
+    font-size: 0.875rem;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(99, 115, 129);
+    display: block;
+}
+
+.livechatleft .list-container .user .date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 16px;
+    height: 44px;
+}
+
+.rtl.livechatleft .list-container .user .date {
+    margin-right: 16px;
+    margin-left: 0px;
+    align-items: flex-start;
+}
+
+.livechatleft .list-container .user .date .time {
+    margin: 0px 0px 12px;
+    line-height: 1.57143;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(145, 158, 171);
+    font-size: 12px;
+}
+
+.livechatright {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.livechatright .header-livechat {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 8px 8px 8px 20px;
+    min-height: 72px;
+    background-color: rgb(244, 246, 248);
+}
+
+.livechatright .header-livechat .stack {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.livechatright .img-container {
+    position: relative;
+}
+
+.livechatright .img-container .dot {
+    display: flex;
+    flex-flow: wrap;
+    -webkit-box-pack: center;
+    place-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: absolute;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 0.75rem;
+    min-width: 20px;
+    line-height: 1;
+    padding: 0px 6px;
+    height: 20px;
+    border-radius: 10px;
+    z-index: 1;
+    transition: transform 195ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    bottom: 5px;
+    right: 5px;
+    transform: scale(1) translate(50%, 50%);
+    transform-origin: 100% 100%;
+}
+
+.livechatright .header-livechat .active-dot {
+    width: 10px;
+    z-index: 9;
+    padding: 0px;
+    height: 10px;
+    min-width: auto;
+    background-color: rgb(34, 197, 94);
+}
+
+.livechatright .header-livechat .stack .feet {
+    display: flex;
+    flex-direction: column;
+}
+
+.livechatright .header-livechat .stack .feet .name {
+    margin: 0px;
+    display: block;
+    font-weight: 600;
+    line-height: 1.57143;
+    font-size: 0.875rem;
+}
+
+.livechatright .header-livechat .stack .feet .online {
+    margin: 0px;
+    line-height: 1.57143;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgb(99, 115, 129);
+    display: block;
+    text-transform: capitalize;
+}
+
+.livechatright .body-chat {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-top: 1px solid rgba(145, 158, 171, 0.2);
+}
+
+.livechatright .body-chat .stack {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-top: 1px solid rgba(145, 158, 171, 0.2);
+}
+
+.livechatright .body-chat .stack .message {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.livechatright .body-chat .stack .first-sec {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    height: 100%;
+    overflow: auto;
+    padding: 40px 0;
+}
+
+.livechatright .body-chat .stack .message .sec-section {
+    line-height: 1.4375em;
+    font-size: 1rem;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    color: rgb(33, 43, 54);
+    box-sizing: border-box;
+    position: relative;
+    cursor: text;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 56px;
+    flex-shrink: 0;
+    border-top: 1px solid rgba(145, 158, 171, 0.2);
+}
+
+.livechatright .body-chat .stack .message .sec-section input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0px 8px;
+    font-weight: 400;
+    color: rgb(33, 43, 54);
+    font-size: 1rem;
+    line-height: 1.4375em;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.rtl.livechatright .body-chat .stack .message .sec-section svg {
+    transform: rotate(180deg);
+}
+
+.livechatright .body-chat .stack .info {
+    position: relative;
+}
+
+.livechatright .body-chat .stack .info .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-shrink: 0;
+    width: 240px;
+    border-left: 1px solid rgba(145, 158, 171, 0.2);
+    transition: width 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.rtl.livechatright .body-chat .stack .info .card {
+    border-right: 1px solid rgba(145, 158, 171, 0.2);
+    border-left: none;
+}
+
+.livechatright .body-chat .stack .info .card .card-title {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.livechatright .body-chat .stack .info .card .card-title .image-profile {
+    margin-bottom: 16px;
+}
+
+.livechatright .body-chat .stack .info .card .card-title h6 {
+    margin: 0px;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.livechatright .body-chat .stack .info .card .card-title p {
+    margin: 4px 0px 0px;
+    line-height: 1.57143;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgb(99, 115, 129);
+}
+
+.livechatright .body-chat .stack .info .card .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 10px 20px;
+}
+
+.livechatright .body-chat .stack .info .card .card-content .stacks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.livechatright .body-chat .stack .info .card .card-content .stacks svg {
+    color: #919eab;
+}
+
+.livechatright .body-chat .stack .info .card .card-content .stacks h6 {
+    margin: 0px;
+    line-height: 1.57143;
+    font-size: 0.875rem;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.livechatright .body-chat .stack .info .card h3 {
+    color: rgb(99, 115, 129);
+    background-color: rgb(244, 246, 248);
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    padding: 8px 12px 8px 20px;
+}
+
+.livechatright .message .owner {
+    flex-direction: row;
+}
+
+.livechatright .message .owner .chat-msg-content {
+    margin-left: 12px;
+    margin-right: 0;
+}
+
+.rtl.livechatright .message .owner .chat-msg-content {
+    margin-left: 0;
+    margin-right: 12px;
+}
+
+.livechatright .message .owner .chat-msg-text {
+    border-radius: 20px 20px 20px 0;
+}
+
+.rtl.livechatright .message .owner .chat-msg-text {
+    border-radius: 20px 20px 0 20px;
+}
+
+.livechatright .message .owner .chat-msg-date {
+    right: auto;
+    left: calc(100% + 12px);
+}
+
+.rtl.livechatright .message .owner .chat-msg-date {
+    right: calc(100% + 12px);
+    left: auto;
+}
+
+.livechatright .message .user {
+    flex-direction: row-reverse;
+}
+
+.rtl.livechatright .message .user .chat-msg-text {
+    border-radius: 20px 20px 20px 0;
+}
+
+.rtl.livechatright .message .user .chat-msg-date {
+    right: auto;
+    left: calc(100% + 12px);
+}
+
+.livechatright h3,
+.livechatright h6 {
+    margin: 0px;
+}
+
+@media screen and (max-width: 1000px) {
+    .livechat .paper {
+        flex-direction: column;
+        overflow: unset;
+        height: 100%;
+    }
+    .livechatleft {
+        width: 100%;
+    }
+    .livechatright {
+        overflow: unset;
+    }
+    .livechatright .body-chat .stack {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .livechatright .body-chat .stack .info {
+        background-color: rgb(244, 246, 248);
+    }
+    .livechatright .body-chat .stack .info .card {
+        width: 100%;
+    }
+    .livechat .MuiContainer-root.MuiContainer-maxWidthXl {
+        padding: 0;
+    }
+    .livechatright .body-chat .stack .first-sec {
+        padding: 20px 0;
+    }
+    .livechatleft .list-container {
+        height: 30vh;
+        overflow-y: auto;
+    }
+    .livechatright .body-chat .stack .first-sec {
+    height: 40vh;
+    }
+}

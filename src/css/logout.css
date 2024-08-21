@@ -1,0 +1,45 @@
+.logout-menu {
+    padding: 6px 8px;
+    border-radius: 6px;
+    margin: 8px;
+    font-weight: 700;
+}
+
+.logout .img-container {
+    position: relative;
+}
+
+.logout .avatar-logout {
+    width: 32px;
+    height: 32px;
+    background-color: "#4945ff";
+    border-radius: 50%;
+}
+
+.logout .menu-back {
+    /* background-color: #fff; */
+    border-radius: 6px;
+    padding: 8px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    width: 10%;
+    position: absolute;
+    right: -10px;
+    z-index: 1000;
+}
+
+.logout.rtl .menu-back {
+    left: -10px;
+    right: auto;
+}
+
+.logout .li-items {
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 0.25rem;
+
+}
+
+/* .logout .li-items:hover {
+    background-color: #dbeafe;
+} */

@@ -1,0 +1,219 @@
+.home-first-sec {}
+
+.home-first-sec .stack {
+    display: flex;
+    background: linear-gradient(135deg, rgba(118, 176, 241, 0.2), rgba(32, 101, 209, 0.2)) rgb(255, 255, 255);
+    border-radius: 16px;
+    position: relative;
+    color: rgb(6, 27, 100);
+}
+
+.rtl .subtitle {
+    text-align: right;
+}
+
+.home-first-sec .stack-first {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.home-first-sec .stack-first .title {
+    margin: 0px 0px 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-family: "Public Sans", sans-serif;
+    white-space: pre-line;
+}
+
+.home-first-sec .stack-first .subtitle {
+    margin: 0px;
+    line-height: 1.57143;
+    font-size: 0.875rem;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    opacity: 0.8;
+    max-width: 360px;
+}
+
+.home-first-sec .stack-first .first-btn {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 1.71429;
+    font-size: 0.875rem;
+    text-transform: unset;
+    font-family: "Public Sans", sans-serif;
+    min-width: 64px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: rgb(255, 255, 255);
+    background-color: rgb(32, 101, 209);
+    box-shadow: none;
+}
+
+.home-first-sec .stack-img {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-first-sec .paper {
+    background-color: rgb(255, 255, 255);
+    color: rgb(33, 43, 54);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-image: none;
+    overflow: hidden;
+    position: relative;
+    box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+    border-radius: 16px;
+    z-index: 0;
+}
+
+.hello-donut {
+    min-height: 274.85px;
+}
+
+.hello-donut .apexcharts-canvas {
+    width: 491px;
+    height: 100% !important;
+}
+
+.hello-linechart {
+    min-height: 379px;
+}
+
+.hello-linechart .apexcharts-canvas {
+    width: 845px;
+    height: 364px !important;
+}
+
+@media (min-width: 0) {
+    .home-first-sec .stack {
+        flex-direction: column;
+    }
+
+    .home-first-sec .stack-first {
+        -webkit-box-align: center;
+        align-items: center;
+        padding: 40px 24px 0px;
+        text-align: center;
+    }
+
+    .home-first-sec .stack-first .subtitle {
+        margin-bottom: 24px;
+    }
+
+    .home-first-sec .stack-img {
+        padding: 40px;
+    }
+}
+
+@media (min-width: 600px) {
+    .home-first-sec .stack {
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .home-first-sec .stack-first {
+        align-items: flex-start;
+        padding: 40px;
+        text-align: left;
+    }
+
+    .home-first-sec .stack-first .title {
+        font-size: 1.25rem;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .home-first-sec .stack {
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .home-first-sec .stack-first {
+        align-items: flex-start;
+        padding: 40px;
+        text-align: left;
+    }
+
+    .home-first-sec .stack-first .title {
+        font-size: 1.5rem;
+    }
+
+    .home-first-sec .stack-img {
+        padding: 24px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .home-first-sec .stack-first .title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1536px) {
+    .home-first-sec .stack-first .subtitle {
+        margin-bottom: 40px;
+    }
+}
+
+.light span.apexcharts-legend-text {
+    color: #000 !important;
+}
+
+.dark span.apexcharts-legend-text {
+    color: #fff !important;
+}
+
+/* apex chart line */
+.dark span.apexcharts-legend-text {
+    color: #fff !important;
+}
+
+.dark .apexcharts-yaxis-texts-g text {
+    fill: white !important;
+}
+
+.dark .apexcharts-xaxis-texts-g text {
+    fill: white !important;
+}
+
+.dark .apexcharts-tooltip.apexcharts-theme-light {
+    background: #000 !important;
+}
+
+.dark .apexcharts-tooltip-title {
+    background: #000 !important;
+}
+
+.dark .apexcharts-xaxistooltip {
+    background: #000 !important;
+    color: #fff !important;
+}

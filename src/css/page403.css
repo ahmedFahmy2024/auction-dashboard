@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:700);
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.text-wrapper a {
+    color: #EE4B5E !important;
+    text-decoration: none;
+}
+
+.text-wrapper a:hover {
+    color: #FFFFFF !important;
+    text-decoration: none;
+}
+
+.text-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-wrapper .title {
+    font-size: 5em;
+    font-weight: 700;
+    color: #EE4B5E;
+}
+
+.text-wrapper .subtitle {
+    font-size: 40px;
+    font-weight: 700;
+    color: #1FA9D6;
+}
+
+.text-wrapper .isi {
+    font-size: 18px;
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+    color: white;
+}
+
+.text-wrapper .buttons {
+    margin: 30px;
+    font-weight: 700;
+    border: 2px solid #EE4B5E;
+    text-decoration: none;
+    padding: 15px;
+    text-transform: uppercase;
+    color: #EE4B5E;
+    border-radius: 26px;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+}
+
+.text-wrapper .buttons:hover {
+    background-color: #EE4B5E;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.text-wrapper .buttons:hover .button {
+    color: white !important;
+}

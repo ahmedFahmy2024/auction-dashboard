@@ -1,0 +1,46 @@
+.translate .lang-list {
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    position: absolute;
+    right: 172px;
+    top: 79%;
+    z-index: 1000;
+    color: rgb(33, 43, 54);
+    min-width: 16px;
+    max-width: calc(100% - 32px);
+    padding: 4px;
+    width: 160px;
+    overflow: inherit;
+    border-radius: 10px;
+}
+
+.translate.rtl .lang-list {
+    left: 172px;
+    right: auto;
+}
+
+.translate .lang-menu .stack {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.translate .lang-menu .stack img {
+    width: 28px;
+}
+
+.translate .lang-list img {
+    width: 28px;
+}
+
+.translate .lang-list span {
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.translate .lang-list li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    padding: 6px 8px;
+}

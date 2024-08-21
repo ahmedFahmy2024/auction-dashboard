@@ -1,0 +1,378 @@
+.usersView {}
+
+.usersView .box1 {}
+
+.usersView .box1 .stack {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.usersView .box1 .stack .firstbox {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+
+.usersView .box1 .stack .title {
+    margin: 0px 0px 8px;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.25rem;
+}
+
+.usersView .box1 .stack .nav {
+    margin: 0px;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(99, 115, 129);
+}
+
+.usersView .box1 .stack .nav ol {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.usersView .box1 .stack .nav ol li {
+    display: inline-flex;
+    margin: 2px 0px;
+}
+
+.usersView .box1 .stack .nav ol li a {
+    line-height: 1.57143;
+    font-size: 0.875rem;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    margin: 0px;
+    font-style: inherit;
+    font-variant: inherit;
+    font-stretch: inherit;
+    font-optical-sizing: inherit;
+    font-kerning: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    text-decoration: none;
+    line-height: 1.57143;
+    font-size: 0.875rem;
+    font-weight: 400;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(33, 43, 54);
+    display: inline-flex;
+}
+
+.usersView .box1 .stack .nav ol li.MuiBreadcrumbs-separator {
+    display: flex;
+    user-select: none;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.usersView .box1 .stack .nav ol li.MuiBreadcrumbs-separator span {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgb(145, 158, 171);
+}
+
+.usersView .box1 .stack .nav ol li p {
+    line-height: 1.57143;
+    font-size: 0.875rem;
+    font-weight: 400;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(145, 158, 171);
+    display: inline-flex;
+    cursor: default;
+    pointer-events: none;
+}
+
+.usersView .box2 .paper {
+    background-color: rgb(255, 255, 255);
+    color: rgb(33, 43, 54);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-image: none;
+    overflow: hidden;
+    position: relative;
+    box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+    border-radius: 16px;
+    z-index: 0;
+    margin-bottom: 24px;
+    height: 290px;
+}
+
+.usersView .box2 .paper .first {
+    height: 100%;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(rgba(32, 10, 105, 0.8), rgba(32, 10, 105, 0.8)) center center / cover no-repeat, url(../assets/userBackground.jpg);
+    background-position: center center;
+}
+
+.usersView .box2 .paper .first .only {
+    display: flex;
+}
+
+.usersView .box2 .paper .first .only .profile-pic {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+    line-height: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    user-select: none;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.usersView .box2 .paper .first .only .profile-pic img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    object-fit: cover;
+    color: transparent;
+    text-indent: 10000px;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.usersView .box2 .paper .first .only .text {
+    flex: 1 1 auto;
+    min-width: 0px;
+    margin: 24px 0px 0px;
+}
+
+.usersView .box2 .paper .first .only .text .name {
+    margin: 0px;
+    display: block;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.25rem;
+}
+
+.usersView .box2 .paper .first .only .text .email {
+    margin: 4px 0px 0px;
+    color: inherit;
+    display: block;
+    line-height: 1.57143;
+    font-size: 0.875rem;
+    font-weight: 400;
+    opacity: 0.48;
+}
+
+.usersView .box2 .paper .second {
+    overflow: hidden;
+    min-height: 48px;
+    display: flex;
+    width: 100%;
+    bottom: 0px;
+    z-index: 9;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+}
+
+.usersView .box2 .paper .second .scrollbar {
+    width: 99px;
+    height: 99px;
+    position: absolute;
+    top: -9999px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.usersView .box2 .paper .second .scrollbarX {
+    position: relative;
+    display: inline-block;
+    flex: 1 1 auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    overflow: auto hidden;
+    margin-bottom: 0px;
+}
+
+.usersView .box2 .paper .second .scrollbarX .container {
+    display: flex;
+}
+
+.usersView .box2 .paper .second .scrollbarX .container .button {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    line-height: 1.25;
+    font-size: 0.875rem;
+    text-transform: unset;
+    font-family: "Public Sans", sans-serif;
+    max-width: 360px;
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+    white-space: normal;
+    text-align: center;
+    flex-direction: row;
+    color: inherit;
+    padding: 0px;
+    opacity: 1;
+    min-width: 48px;
+    min-height: 48px;
+    font-weight: 600;
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    z-index: 1000;
+}
+
+.usersView .box2 .paper .second .scrollbarX .container .button:not(.selected) {
+    color: rgb(99, 115, 129);
+}
+
+.usersView .box2 .paper .second .scrollbarX .container .button.selected {
+    border-bottom: 2px solid rgb(33, 43, 54);
+}
+
+.usersView .box2 .paper .second .scrollbarX .container .button:not(:last-of-type) {
+    margin-right: 24px;
+}
+
+.usersView.rtl .box2 .paper .second .scrollbarX .container .button:not(:last-of-type) {
+    margin-left: 24px;
+    margin-right: 0px;
+}
+
+.usersView .box2 .paper .second .scrollbarX .container .button svg {
+    margin-right: 8px;
+}
+
+.usersView.rtl .box2 .paper .second .scrollbarX .container .button svg {
+    margin-left: 8px;
+    margin-right: 0px;
+}
+
+.usersView .box3 {
+    margin-bottom: 20px;
+}
+
+
+@media (min-width: 0) {
+    .usersView .box1 {
+        margin-bottom: 24px;
+    }
+
+    .usersView .box2 .paper .first .only {
+        padding-top: 48px;
+        flex-direction: column;
+    }
+
+    .usersView .box2 .paper .first .only .profile-pic {
+        width: 64px;
+        height: 64px;
+    }
+
+    .usersView .box2 .paper .first .only .text {
+        text-align: center;
+    }
+}
+
+@media (min-width: 600px) {
+    .usersView .box1 .stack .title {
+        font-size: 1.25rem;
+    }
+
+    .usersView .box2 .paper .first .only .text .name {
+        font-size: 1.25rem;
+    }
+
+    .usersView .box2 .paper .second .scrollbarX .container {
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+
+    /* .usersView .box2 .paper .second .scrollbarX .container .button:not(:last-of-type) {
+        margin-right: 40px;
+    } */
+}
+
+@media (min-width: 900px) {
+    .usersView .box1 {
+        margin-bottom: 40px;
+    }
+
+    .usersView .box1 .stack .title {
+        font-size: 1.5rem;
+    }
+
+    .usersView .box2 .paper .first .only {
+        left: 24px;
+        bottom: 100px;
+        z-index: 10;
+        padding-top: 0px;
+        position: absolute;
+        flex-direction: row;
+    }
+
+    .usersView.rtl .box2 .paper .first .only {
+        right: 24px;
+        left: 0;
+    }
+
+    .usersView .box2 .paper .first .only .profile-pic {
+        width: 128px;
+        height: 128px;
+    }
+
+    .usersView .box2 .paper .first .only .text {
+        margin-left: 24px;
+        text-align: unset;
+    }
+
+    .usersView.rtl .box2 .paper .first .only .text {
+        margin-right: 24px;
+        margin-left: 0;
+    }
+
+    .usersView .box2 .paper .first .only .text .name {
+        font-size: 1.5rem;
+    }
+
+    .usersView .box2 .paper .second .scrollbarX .container {
+        padding-right: 24px;
+        -webkit-box-pack: end;
+        justify-content: flex-end;
+    }
+
+    .usersView.rtl .box2 .paper .second .scrollbarX .container {
+        justify-content: flex-start;
+        padding-left: 24px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .usersView .box1 .stack .title {
+        font-size: 1.5rem;
+    }
+}

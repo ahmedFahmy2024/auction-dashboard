@@ -1,0 +1,8 @@
+header.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation4.MuiAppBar-root.MuiAppBar-colorPrimary.MuiAppBar-positionStatic {
+    box-shadow: none !important;
+}
+
+.main-header .bell {
+    cursor: pointer;
+
+}

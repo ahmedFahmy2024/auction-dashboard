@@ -1,0 +1,75 @@
+.usertranscation {}
+
+.usertranscation .paper {
+    background-color: rgb(255, 255, 255);
+    color: rgb(33, 43, 54);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-image: none;
+    overflow: hidden;
+    position: relative;
+    box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+    border-radius: 16px;
+    z-index: 0;
+}
+
+.usertranscation .paper .header {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 24px 24px 0px;
+}
+
+.usertranscation .paper .header .content {
+    flex: 1 1 auto;
+}
+
+.usertranscation .paper .header .text {
+    margin: 0px;
+    font-weight: 700;
+    line-height: 1.55556;
+    font-size: 1.0625rem;
+    display: block;
+}
+
+.usertranscation .paper .body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+}
+
+.usertranscation .paper .body .content {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.usertranscation .paper .body .content .text {
+    line-height: 1.57143;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.usertranscation .paper .body .content .text .span {
+    /* margin: 0px; */
+    font-weight: 600;
+    line-height: 1.57143;
+    font-size: 0.875rem;
+    color: inherit;
+}
+
+@media (min-width: 0) {}
+
+@media (min-width: 600px) {
+    .usertranscation .paper {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .usertranscation .paper {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) {}

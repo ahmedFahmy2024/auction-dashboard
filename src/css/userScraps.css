@@ -1,0 +1,182 @@
+.userScraps .content-img {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.userScraps .text {
+    line-height: 1.57143;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.userScraps .content-img .img-container {
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 4px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(145, 158, 171, 0.16);
+    opacity: 1;
+    transform: none;
+}
+
+.userScraps .content-img .img-container .img-span {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: fit-content;
+    height: inherit;
+}
+
+.userScraps .content-img .img {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    position: absolute;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+    top: 0;
+    left: 0;
+}
+
+.userScraps {}
+
+.userScraps .paper {
+    background-color: rgb(255, 255, 255);
+    color: rgb(33, 43, 54);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-image: none;
+    overflow: hidden;
+    position: relative;
+    box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+    border-radius: 16px;
+    z-index: 0;
+}
+
+.userScraps .paper .header {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 24px 24px 0px;
+}
+
+.userScraps .paper .header .content {
+    flex: 1 1 auto;
+}
+
+.userScraps .paper .header .text {
+    margin: 0px;
+    font-weight: 700;
+    line-height: 1.55556;
+    font-size: 1.0625rem;
+    display: block;
+}
+
+.userScraps .paper .body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+}
+
+.userScraps .paper .body .content {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.userScraps .paper .body .content .text {
+    line-height: 1.57143;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.userScraps .paper .body .content .text .span {
+    /* margin: 0px; */
+    font-weight: 600;
+    line-height: 1.57143;
+    font-size: 0.875rem;
+    color: inherit;
+}
+
+.userScraps .paper .body .first-icon {
+    margin: 0 auto;
+}
+
+.userScraps .images-contain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.userScraps .preview {
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 4px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(145, 158, 171, 0.16);
+    opacity: 1;
+    transform: none;
+}
+
+.userScraps .preview .prev-image {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: fit-content;
+    height: inherit;
+}
+
+.userScraps .preview .prev-image img {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    position: absolute;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+@media (min-width: 0) {}
+
+@media (min-width: 600px) {
+    .userScraps .paper {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .userScraps .paper {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) {}
